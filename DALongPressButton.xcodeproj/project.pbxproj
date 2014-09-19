@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BE4161D19CC2A9800D6E7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4161C19CC2A9800D6E7AD /* Foundation.framework */; };
+		1BE4161F19CC2A9800D6E7AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4161E19CC2A9800D6E7AD /* CoreGraphics.framework */; };
+		1BE4162119CC2A9800D6E7AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4162019CC2A9800D6E7AD /* UIKit.framework */; };
+		1BE4162719CC2A9800D6E7AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4162519CC2A9800D6E7AD /* InfoPlist.strings */; };
+		1BE4162919CC2A9800D6E7AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4162819CC2A9800D6E7AD /* main.m */; };
+		1BE4162D19CC2A9800D6E7AD /* DAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4162C19CC2A9800D6E7AD /* DAAppDelegate.m */; };
+		1BE4163019CC2A9800D6E7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4162E19CC2A9800D6E7AD /* Main.storyboard */; };
+		1BE4163319CC2A9800D6E7AD /* DAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4163219CC2A9800D6E7AD /* DAViewController.m */; };
+		1BE4163519CC2A9800D6E7AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4163419CC2A9800D6E7AD /* Images.xcassets */; };
+		1BE4163C19CC2A9900D6E7AD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4163B19CC2A9900D6E7AD /* XCTest.framework */; };
+		1BE4163D19CC2A9900D6E7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4161C19CC2A9800D6E7AD /* Foundation.framework */; };
+		1BE4163E19CC2A9900D6E7AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4162019CC2A9800D6E7AD /* UIKit.framework */; };
+		1BE4164619CC2A9900D6E7AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4164419CC2A9900D6E7AD /* InfoPlist.strings */; };
+		1BE4164819CC2A9900D6E7AD /* DALongPressButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4164719CC2A9900D6E7AD /* DALongPressButtonTests.m */; };
+		1BE4165519CC326000D6E7AD /* blurred_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4165219CC326000D6E7AD /* blurred_background.png */; };
+		1BE4165619CC326000D6E7AD /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4165319CC326000D6E7AD /* icon1.png */; };
+		1BE4165719CC326000D6E7AD /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4165419CC326000D6E7AD /* undo.png */; };
+		1BE4165A19CC327600D6E7AD /* DALongPressButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4165919CC327600D6E7AD /* DALongPressButtonView.m */; };
+		1BE4165B19CC327600D6E7AD /* DALongPressButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4165919CC327600D6E7AD /* DALongPressButtonView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BE4163F19CC2A9900D6E7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BE4161119CC2A9800D6E7AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BE4161819CC2A9800D6E7AD;
+			remoteInfo = DALongPressButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BE4161919CC2A9800D6E7AD /* DALongPressButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DALongPressButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE4161C19CC2A9800D6E7AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BE4161E19CC2A9800D6E7AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1BE4162019CC2A9800D6E7AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BE4162419CC2A9800D6E7AD /* DALongPressButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DALongPressButton-Info.plist"; sourceTree = "<group>"; };
+		1BE4162619CC2A9800D6E7AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BE4162819CC2A9800D6E7AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BE4162A19CC2A9800D6E7AD /* DALongPressButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DALongPressButton-Prefix.pch"; sourceTree = "<group>"; };
+		1BE4162B19CC2A9800D6E7AD /* DAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAAppDelegate.h; sourceTree = "<group>"; };
+		1BE4162C19CC2A9800D6E7AD /* DAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAAppDelegate.m; sourceTree = "<group>"; };
+		1BE4162F19CC2A9800D6E7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BE4163119CC2A9800D6E7AD /* DAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAViewController.h; sourceTree = "<group>"; };
+		1BE4163219CC2A9800D6E7AD /* DAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAViewController.m; sourceTree = "<group>"; };
+		1BE4163419CC2A9800D6E7AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1BE4163A19CC2A9900D6E7AD /* DALongPressButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DALongPressButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE4163B19CC2A9900D6E7AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1BE4164319CC2A9900D6E7AD /* DALongPressButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DALongPressButtonTests-Info.plist"; sourceTree = "<group>"; };
+		1BE4164519CC2A9900D6E7AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BE4164719CC2A9900D6E7AD /* DALongPressButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DALongPressButtonTests.m; sourceTree = "<group>"; };
+		1BE4165219CC326000D6E7AD /* blurred_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurred_background.png; sourceTree = "<group>"; };
+		1BE4165319CC326000D6E7AD /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		1BE4165419CC326000D6E7AD /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
+		1BE4165819CC327600D6E7AD /* DALongPressButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALongPressButtonView.h; sourceTree = "<group>"; };
+		1BE4165919CC327600D6E7AD /* DALongPressButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALongPressButtonView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BE4161619CC2A9800D6E7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4161F19CC2A9800D6E7AD /* CoreGraphics.framework in Frameworks */,
+				1BE4162119CC2A9800D6E7AD /* UIKit.framework in Frameworks */,
+				1BE4161D19CC2A9800D6E7AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BE4163719CC2A9900D6E7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4163C19CC2A9900D6E7AD /* XCTest.framework in Frameworks */,
+				1BE4163E19CC2A9900D6E7AD /* UIKit.framework in Frameworks */,
+				1BE4163D19CC2A9900D6E7AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BE4161019CC2A9800D6E7AD = {
+			isa = PBXGroup;
+			children = (
+				1BE4162219CC2A9800D6E7AD /* DALongPressButton */,
+				1BE4164119CC2A9900D6E7AD /* DALongPressButtonTests */,
+				1BE4161B19CC2A9800D6E7AD /* Frameworks */,
+				1BE4161A19CC2A9800D6E7AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BE4161A19CC2A9800D6E7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4161919CC2A9800D6E7AD /* DALongPressButton.app */,
+				1BE4163A19CC2A9900D6E7AD /* DALongPressButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BE4161B19CC2A9800D6E7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4161C19CC2A9800D6E7AD /* Foundation.framework */,
+				1BE4161E19CC2A9800D6E7AD /* CoreGraphics.framework */,
+				1BE4162019CC2A9800D6E7AD /* UIKit.framework */,
+				1BE4163B19CC2A9900D6E7AD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BE4162219CC2A9800D6E7AD /* DALongPressButton */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4165819CC327600D6E7AD /* DALongPressButtonView.h */,
+				1BE4165919CC327600D6E7AD /* DALongPressButtonView.m */,
+				1BE4165119CC326000D6E7AD /* Resources */,
+				1BE4162B19CC2A9800D6E7AD /* DAAppDelegate.h */,
+				1BE4162C19CC2A9800D6E7AD /* DAAppDelegate.m */,
+				1BE4162E19CC2A9800D6E7AD /* Main.storyboard */,
+				1BE4163119CC2A9800D6E7AD /* DAViewController.h */,
+				1BE4163219CC2A9800D6E7AD /* DAViewController.m */,
+				1BE4163419CC2A9800D6E7AD /* Images.xcassets */,
+				1BE4162319CC2A9800D6E7AD /* Supporting Files */,
+			);
+			path = DALongPressButton;
+			sourceTree = "<group>";
+		};
+		1BE4162319CC2A9800D6E7AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4162419CC2A9800D6E7AD /* DALongPressButton-Info.plist */,
+				1BE4162519CC2A9800D6E7AD /* InfoPlist.strings */,
+				1BE4162819CC2A9800D6E7AD /* main.m */,
+				1BE4162A19CC2A9800D6E7AD /* DALongPressButton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BE4164119CC2A9900D6E7AD /* DALongPressButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4164719CC2A9900D6E7AD /* DALongPressButtonTests.m */,
+				1BE4164219CC2A9900D6E7AD /* Supporting Files */,
+			);
+			path = DALongPressButtonTests;
+			sourceTree = "<group>";
+		};
+		1BE4164219CC2A9900D6E7AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4164319CC2A9900D6E7AD /* DALongPressButtonTests-Info.plist */,
+				1BE4164419CC2A9900D6E7AD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BE4165119CC326000D6E7AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4165219CC326000D6E7AD /* blurred_background.png */,
+				1BE4165319CC326000D6E7AD /* icon1.png */,
+				1BE4165419CC326000D6E7AD /* undo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BE4161819CC2A9800D6E7AD /* DALongPressButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE4164B19CC2A9900D6E7AD /* Build configuration list for PBXNativeTarget "DALongPressButton" */;
+			buildPhases = (
+				1BE4161519CC2A9800D6E7AD /* Sources */,
+				1BE4161619CC2A9800D6E7AD /* Frameworks */,
+				1BE4161719CC2A9800D6E7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DALongPressButton;
+			productName = DALongPressButton;
+			productReference = 1BE4161919CC2A9800D6E7AD /* DALongPressButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BE4163919CC2A9900D6E7AD /* DALongPressButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE4164E19CC2A9900D6E7AD /* Build configuration list for PBXNativeTarget "DALongPressButtonTests" */;
+			buildPhases = (
+				1BE4163619CC2A9900D6E7AD /* Sources */,
+				1BE4163719CC2A9900D6E7AD /* Frameworks */,
+				1BE4163819CC2A9900D6E7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BE4164019CC2A9900D6E7AD /* PBXTargetDependency */,
+			);
+			name = DALongPressButtonTests;
+			productName = DALongPressButtonTests;
+			productReference = 1BE4163A19CC2A9900D6E7AD /* DALongPressButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BE4161119CC2A9800D6E7AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Cocoatouch.ru;
+				TargetAttributes = {
+					1BE4163919CC2A9900D6E7AD = {
+						TestTargetID = 1BE4161819CC2A9800D6E7AD;
+					};
+				};
+			};
+			buildConfigurationList = 1BE4161419CC2A9800D6E7AD /* Build configuration list for PBXProject "DALongPressButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BE4161019CC2A9800D6E7AD;
+			productRefGroup = 1BE4161A19CC2A9800D6E7AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BE4161819CC2A9800D6E7AD /* DALongPressButton */,
+				1BE4163919CC2A9900D6E7AD /* DALongPressButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BE4161719CC2A9800D6E7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4165519CC326000D6E7AD /* blurred_background.png in Resources */,
+				1BE4163519CC2A9800D6E7AD /* Images.xcassets in Resources */,
+				1BE4162719CC2A9800D6E7AD /* InfoPlist.strings in Resources */,
+				1BE4165619CC326000D6E7AD /* icon1.png in Resources */,
+				1BE4163019CC2A9800D6E7AD /* Main.storyboard in Resources */,
+				1BE4165719CC326000D6E7AD /* undo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BE4163819CC2A9900D6E7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4164619CC2A9900D6E7AD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BE4161519CC2A9800D6E7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4165A19CC327600D6E7AD /* DALongPressButtonView.m in Sources */,
+				1BE4162919CC2A9800D6E7AD /* main.m in Sources */,
+				1BE4163319CC2A9800D6E7AD /* DAViewController.m in Sources */,
+				1BE4162D19CC2A9800D6E7AD /* DAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BE4163619CC2A9900D6E7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE4165B19CC327600D6E7AD /* DALongPressButtonView.m in Sources */,
+				1BE4164819CC2A9900D6E7AD /* DALongPressButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BE4164019CC2A9900D6E7AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BE4161819CC2A9800D6E7AD /* DALongPressButton */;
+			targetProxy = 1BE4163F19CC2A9900D6E7AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BE4162519CC2A9800D6E7AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE4162619CC2A9800D6E7AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BE4162E19CC2A9800D6E7AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE4162F19CC2A9800D6E7AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BE4164419CC2A9900D6E7AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE4164519CC2A9900D6E7AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BE4164919CC2A9900D6E7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BE4164A19CC2A9900D6E7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BE4164C19CC2A9900D6E7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DALongPressButton/DALongPressButton-Prefix.pch";
+				INFOPLIST_FILE = "DALongPressButton/DALongPressButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BE4164D19CC2A9900D6E7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DALongPressButton/DALongPressButton-Prefix.pch";
+				INFOPLIST_FILE = "DALongPressButton/DALongPressButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1BE4164F19CC2A9900D6E7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DALongPressButton.app/DALongPressButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DALongPressButton/DALongPressButton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DALongPressButtonTests/DALongPressButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1BE4165019CC2A9900D6E7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DALongPressButton.app/DALongPressButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DALongPressButton/DALongPressButton-Prefix.pch";
+				INFOPLIST_FILE = "DALongPressButtonTests/DALongPressButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BE4161419CC2A9800D6E7AD /* Build configuration list for PBXProject "DALongPressButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE4164919CC2A9900D6E7AD /* Debug */,
+				1BE4164A19CC2A9900D6E7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE4164B19CC2A9900D6E7AD /* Build configuration list for PBXNativeTarget "DALongPressButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE4164C19CC2A9900D6E7AD /* Debug */,
+				1BE4164D19CC2A9900D6E7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE4164E19CC2A9900D6E7AD /* Build configuration list for PBXNativeTarget "DALongPressButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE4164F19CC2A9900D6E7AD /* Debug */,
+				1BE4165019CC2A9900D6E7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BE4161119CC2A9800D6E7AD /* Project object */;
+}
