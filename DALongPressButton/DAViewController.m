@@ -28,9 +28,9 @@
     _longPressButton.delegate = self;
     _longPressButton.borderColor = [UIColor whiteColor];
     _longPressButton.backgroundColor = [UIColor colorWithRed:214.0f/255.0f green:214.0f/255.0f blue:214.0f/255.0f alpha:1.0];
-    _longPressButton.tintColor = [UIColor blackColor];
+    _longPressButton.tintColor = [UIColor whiteColor];
     _longPressButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
-    [_longPressButton setImage:[UIImage imageNamed:@"undo"] forState:UIControlStateNormal];
+    [_longPressButton setImage:[[UIImage imageNamed:@"undo"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     _longPressButton.imageEdgeInsets = UIEdgeInsetsMake(7, 10, 7, 10);
     _longPressButton.collapsedFrame = CGRectMake(10, 80, 40, 40);
     _longPressButton.expandedFrame = CGRectMake(10, 80, 40, 200);

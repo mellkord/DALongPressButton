@@ -5,8 +5,8 @@
 
 #import "DALongPressButtonView.h"
 
-static CGFloat kDistanceToContainerView = 5.0f;
-static CGFloat kLineWidthMultiplyer = 0.05f;
+static CGFloat kDistanceToContainerView = 3.0f;
+static CGFloat kLineWidthMultiplyer = 0.03f;
 
 @interface DALongPressButtonView()
 {
@@ -57,6 +57,7 @@ static CGFloat kLineWidthMultiplyer = 0.05f;
 {
     int radius = self.bounds.size.width / 2;
     
+    //self.buttonType = UIButtonTypeCustom;
 
     self.layer.cornerRadius = radius;
     self.layer.borderColor = [self.borderColor CGColor];
@@ -120,6 +121,8 @@ static CGFloat kLineWidthMultiplyer = 0.05f;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self performSelector:@selector(startLongTapAnimation) withObject:nil afterDelay:0.2];
+    self.tintColor = [UIColor blackColor];
+    self.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 - (void)startLongTapAnimation
@@ -141,12 +144,17 @@ static CGFloat kLineWidthMultiplyer = 0.05f;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self toggleOnOff];
+    
+    self.tintColor = self.borderColor;
+    self.layer.borderColor = self.borderColor.CGColor;
+    
     if (_startTime == 0.0f)
     {
         [NSObject cancelPreviousPerformRequestsWithTarget:self
                                                  selector:@selector(startLongTapAnimation) object:nil];
         return;
     }
+    
     CFTimeInterval stopTime = [_circleAnimated convertTime:CACurrentMediaTime() fromLayer:nil];
     CFTimeInterval timeOffset = stopTime - _startTime;
     _currentStrokeEnd = timeOffset / 1.4;
@@ -191,6 +199,9 @@ static CGFloat kLineWidthMultiplyer = 0.05f;
 
 - (void)collapseAnimated:(BOOL)animated
 {
+    self.tintColor = self.borderColor;
+    self.layer.borderColor = self.borderColor.CGColor;
+    
     CGPathRef fromPath  = _circleAnimated.path;
     CGPathRef toPath  = [self generatePathWithRect:CGRectInset(self.collapsedFrame, -kDistanceToContainerView, -kDistanceToContainerView)];
     
