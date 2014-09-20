@@ -26,15 +26,18 @@
     [super viewDidLoad];
 	_longPressButton = [[DALongPressButtonView alloc] init];
     _longPressButton.delegate = self;
-    _longPressButton.borderColor = [UIColor whiteColor];
     _longPressButton.backgroundColor = [UIColor colorWithRed:214.0f/255.0f green:214.0f/255.0f blue:214.0f/255.0f alpha:1.0];
-    _longPressButton.tintColor = [UIColor whiteColor];
-    _longPressButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
+    _longPressButton.normalTintColor = [UIColor whiteColor];
+    _longPressButton.higlitedTintColor = [UIColor colorWithRed:103.0f/255.0f green:103.0f/255.0f blue:103.0f/255.0f alpha:1.0];
+//    _longPressButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
     [_longPressButton setImage:[[UIImage imageNamed:@"undo"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     _longPressButton.imageEdgeInsets = UIEdgeInsetsMake(7, 10, 7, 10);
     _longPressButton.collapsedFrame = CGRectMake(10, 80, 40, 40);
     _longPressButton.expandedFrame = CGRectMake(10, 80, 40, 200);
-    _longPressButton.longPressButtonState = DALongPressButtonStateCollapsed;
+    _longPressButton.longPressButtonState = DALongPressButtonStateExpanded;
+    [_longPressButton addTarget:self action:@selector(handleTapOnButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_longPressButton initializeControl];
     [self.view addSubview:_longPressButton];
 }
 
@@ -63,6 +66,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     _tableView = tableView;
+    _tableView.separatorColor = [UIColor colorWithRed:103.0f/255.0f green:103.0f/255.0f blue:103.0f/255.0f alpha:1.0];
     return 20;
 }
 
@@ -81,7 +85,10 @@
     [cell addSubview:iconView];
     
     cell.separatorInset = UIEdgeInsetsZero;
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    
+    UIView *bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor = [UIColor redColor];
+    cell.selectedBackgroundView = bgColorView;
     
     cell.backgroundColor = [UIColor colorWithRed:rand() % 210 / 255.0f green:rand() % 210 / 255.0f blue:rand() % 210 / 255.0f alpha:1.0f];
     return cell;
@@ -104,6 +111,11 @@
             [_tableView.delegate tableView:_tableView didSelectRowAtIndexPath:firstVisibleIndexPath];
         }
     }
+}
+
+- (IBAction)handleTapOnButton:(id)sender
+{
+    self.containerView.backgroundColor = [UIColor colorWithRed:rand() % 210 / 255.0f green:rand() % 210 / 255.0f blue:rand() % 210 / 255.0f alpha:1.0f];
 }
 
 - (IBAction)handleTap:(id)sender

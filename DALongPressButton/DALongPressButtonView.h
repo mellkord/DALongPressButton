@@ -26,7 +26,9 @@ typedef NS_ENUM(NSInteger, DALongPressButtonState)
 @property (nonatomic, assign) CGRect collapsedFrame;
 @property (nonatomic, assign) CGRect expandedFrame;
 
-@property (nonatomic, strong) UIColor *borderColor;
+@property (nonatomic, strong) UIColor *normalTintColor;
+@property (nonatomic, strong) UIColor *higlitedTintColor;
+@property (nonatomic, strong) UIColor *longPressIndicatorColor;
 
 
 @property (nonatomic, assign) id<DALongPressButtonDelegate> delegate;
@@ -34,5 +36,7 @@ typedef NS_ENUM(NSInteger, DALongPressButtonState)
 
 - (void)expandAnimated:(BOOL)animated;
 - (void)collapseAnimated:(BOOL)animated;
+
+- (void)initializeControl;
 
 @end
